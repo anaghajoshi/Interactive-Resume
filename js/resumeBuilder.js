@@ -49,4 +49,49 @@ var bio = {
 
 bio.display();
 
+
+
+var work = {
+    "jobs":[
+        {
+            "employer": "Buchannan & Edwards",
+            "title": "Software Developement Intern",
+            "location": "Charleston, SC",
+            "dates": "JUN 2015 – AUG 2015",
+            "description": "Leveraged JQuery and JavaScript to “Gamify” an official website for the Department of State. Gamification is to apply game design in non-gaming environments. I am responsible for the entire concept design as well as implementation."
+        },
+        {
+            "employer": "Future Computing Technologies Lab (FCTL),Clemson University",
+            "title": "Graduate Student Researcher",
+            "location": "Clemson,SC",
+            "dates": "JAN 2014 -Present",
+            "description": "Proposed a taxonomy to map various high performance computing parallel applications to optimal architectures (CPU, GPGPU or MIC) depending on the characteristics of the application(s). <br> Analyzed trends to learn and extract useful insights about the architecture specific energy and power characteristics in homogenous as well as heterogeneous systems."
+        },
+        {
+            "employer": "Clemson University",
+            "title": "Graduate Grading/Teaching Assistant",
+            "location": "Clemson,SC",
+            "dates": "JAN 2014 -Present",
+            "description": "Responsible for grading the programming assignments for undergraduate students taking the ‘Systems Programming using C’ course – ECE 2220 and ECE 3070 - Basic Electrical Engineering."
+        }
+
+    ]
+
+};
+// Display work json info
+work.display = function(){
+
+    for (var job in work.jobs){
+        $("#workExperience").append(HTMLworkStart);
+        $(".work-entry:last").append(HTMLworkTitle.replace("%data%", work.jobs[job]["title"]))
+            .append(HTMLworkEmployer.replace("%data%", work.jobs[job]["employer"]))
+            .append(HTMLworkLocation.replace("%data%", work.jobs[job]["location"]))
+            .append(HTMLworkDates.replace("%data%", work.jobs[job]["dates"]))
+            .append(HTMLworkDescription.replace("%data%", work.jobs[job]["description"]));
+    }
+
+}
+
+work.display();
+
 //console.log("success!");
