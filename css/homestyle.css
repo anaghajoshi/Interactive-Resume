@@ -11,25 +11,27 @@
 #contact{
     display: none;
 }
-/*
-h1{
+
+h0{
     color: #f2f2f2;
     background: #ff4a4a;
-    font-size: 75px;
+    font-size: 37.85px;
     line-height: 74px;
     font-weight: 700;
 
     font-family: 'Libre Baskerville', serif;
 }
-*/
+/*
 h0{
     color: #7a7c7f;
     font-size: 29px;
     font-family: "Libre Baskerville", serif; 
     line-height: 45px;
+    outline-width: 700px;
     background: beige;
 
 }
+*/
 .yes
 {
 

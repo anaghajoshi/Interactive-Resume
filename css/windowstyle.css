@@ -95,10 +95,14 @@ a.wide:active, a.box:active{
 .magenta{background:#d22a4e;}
 .spacer{
     width:770px;
-    margin-right: 50px;
-    float:left;
+    float: left;
+    position: absolute;
+    padding-left: 0px;
+    padding-top: 150px;
+
 }
 .spacer3x{
+
     width:300px;
 }
 
