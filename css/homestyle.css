@@ -1,3 +1,4 @@
+
 #pic1 {
     float: left;
     padding: 10px;
@@ -10,19 +11,38 @@
 #contact{
     display: none;
 }
-
+/*
 h1{
     color: #f2f2f2;
     background: #ff4a4a;
     font-size: 75px;
     line-height: 74px;
     font-weight: 700;
-    /*margin: 0 5px 24px;
-    float: left;
-    padding: 10px;
-    margin: 0 5px 24px;*/
+
     font-family: 'Libre Baskerville', serif;
 }
+*/
+h1{
+    color: #7a7c7f;
+    font-size: 29px;
+    font-family: "Libre Baskerville", serif; 
+    line-height: 45px;
+    background: beige;
 
+}
+.yes
+{
 
+    background: lawngreen;
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-size-adjust: inherit;
+}
 
+.no{
+    background: red;
+    color: white;
+    width: 100px;
+    height: 35px;
+}

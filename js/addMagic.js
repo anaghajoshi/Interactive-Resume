@@ -6,6 +6,6 @@ function yesFunction(){
 
 }
 function noFunction(){
-    alert("You said no!");
+    confirm("Are you sure? Anagha would love to be introduced with you! Think again! Do you want to know more?");
 
 }
