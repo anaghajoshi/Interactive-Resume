@@ -1,11 +1,10 @@
 /**
  * Created by my_macby on 9/20/15.
  */
-function yesFunction(){
-    alert("You said yes!");
+function contactFn(){
+    document.getElementById('chart-div').style.display='inline';
+    document.getElementById('chart-div')
+        .innerHTML =' <div> <object type="text/html" data="./contact.html" target="_top" width="500px" height="700px" style="overflow:auto"> </object></div>'
 
-}
-function noFunction(){
-    confirm("Are you sure? Anagha would love to be introduced with you! Think again! Do you want to know more?");
 
 }

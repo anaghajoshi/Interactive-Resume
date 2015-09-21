@@ -24,21 +24,7 @@ h0{
 #chart-div{
     float: right;
     float:top;
-    border: solid;
+    /*border: solid;*/
     height: 700px;
     width: 500px;
 }
-/*
-#intro{
-    width: 735px;
-}
-
-#main{
-    width: 735px;
-}
-#container{
-    width: 735px;
-}
-#page1{
-    width: 735px;
-}*/

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <style>
+        #contactMe{
+            padding-left: 100px;
+            padding-top: 250px;
+        }
+        h2{
+            color: black;
+            font-size: 37.85px;
+            line-height: 74px;
+            font-weight: 700;
+
+            font-family: 'Libre Baskerville', serif;
+        }
+        i.icon-phone{
+            font-size: 50px;
+            padding-left: 100px;
+            align: center;
+
+            color:black;
+        }
+
+        i.icon-zoom-in{
+            font-size: 20px;
+            padding-left: 90px;
+            align: center;
+
+            color: black;
+
+        }
+        .b1 {
+            color: black;
+            background: white;
+            font-weight: bold;
+            /*border: 1px solid #900;*/
+        }
+
+        .b1:hover {
+            /*color: #FFF;*/
+            background: black;
+        }
+
+    </style>
+
+
+    <script>
+        function callme(){
+            document.getElementById('phone-div').style.display='inline';
+
+            document.getElementById('phone-div')
+                    .innerHTML =' <h2>&nbsp;(864)-247-7626</h2>'
+
+        }
+        function callmenot(){
+            document.getElementById('phone-div').style.display='inline';
+
+            document.getElementById('phone-div')
+                    .innerHTML =' <h2>&nbsp;(360)-F7-1DCA</h2>'
+
+        }
+    </script>
+</head>
+<body>
+
+<div id="contactMe">
+
+        <i class="icon-phone"></i>
+    <div id="phone-div">
+
+        <h2>&nbsp;(360)-F7-1DCA</h2>
+
+    </div>
+    <div class="col">
+        &nbsp;
+        <button class="b1" onmouseover=callme(); onmouseout=callmenot();>Convert Hex to Decimal<i class="icon-zoom-in"></i></button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
