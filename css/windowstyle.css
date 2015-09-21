@@ -33,7 +33,7 @@ h2{
     margin-left:10px;
     -webkit-transform:scale(0.9);
 }
-a.wide, a.box{
+a.long,a.wide, a.box{
     text-decoration:none;
     color:#fff;
     -webkit-transition: -webkit-transform 0.1s;
@@ -41,33 +41,43 @@ a.wide, a.box{
     overflow:hidden;
 }
 
-a.wide h2, a.box h2{
+a.long h2,a.wide h2, a.box h2{
     position:absolute;
     bottom:5px;
     font-size:14px;
 }
 
-a.wide h2.top, a.box h2.top{
+a.long h2.top,a.wide h2.top, a.box h2.top{
     position:static;
 
     font-size:14px;
 }
-a.wide i, a.box i{
+a.long i,a.wide i, a.box i{
     font-size: 60px;
     text-align: center;
     display: block;
     margin-top: 10px; /* outside Codepen is actually 30px */
 }
-a.wide:hover, a.box:hover{
+a.long:hover,a.wide:hover, a.box:hover{
     -webkit-transform: scale(1.05);
 }
 
-a.wide:active, a.box:active{
+a.long:active,a.wide:active, a.box:active{
     -webkit-transform: scale(1);
 }
 .wide{
     width:270px;
     height:120px;
+    overflow:hidden;
+    font-size:13px;
+    padding:10px;
+    display:block;
+    float:left;
+    margin:5px;
+}
+.long{
+    width:720px;
+    height:60px;
     overflow:hidden;
     font-size:13px;
     padding:10px;
@@ -98,7 +108,7 @@ a.wide:active, a.box:active{
     float: left;
     position: absolute;
     padding-left: 0px;
-    padding-top: 150px;
+    padding-top: 100px;
 
 }
 .spacer3x{
