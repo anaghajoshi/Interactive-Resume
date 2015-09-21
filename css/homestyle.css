@@ -1,0 +1,28 @@
+#pic1 {
+    float: left;
+    padding: 10px;
+    width: 150px;
+   /*display: none;*/
+}
+.pic2 {
+    display: none;
+}
+#contact{
+    display: none;
+}
+
+h1{
+    color: #f2f2f2;
+    background: #ff4a4a;
+    font-size: 75px;
+    line-height: 74px;
+    font-weight: 700;
+    /*margin: 0 5px 24px;
+    float: left;
+    padding: 10px;
+    margin: 0 5px 24px;*/
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+
