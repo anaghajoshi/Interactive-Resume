@@ -117,7 +117,7 @@ a.wide:active, a.box:active{
 }
 
 .gallery{
-    background: url(https://dl.dropbox.com/u/39272011/image_metro.png);
+    background: url(../images/logo.jpg);
     -webkit-animation: galeri 15s infinite;
 }
 .right{
