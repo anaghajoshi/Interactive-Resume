@@ -25,3 +25,12 @@ function workExpFn(){
 
 
 }
+
+
+function eduFn(){
+    document.getElementById('chart-div').style.display='inline';
+    document.getElementById('chart-div')
+        .innerHTML =' <div> <object type="text/html" data="./edu.html" target="_top" width="550px" height="700px" style="overflow:auto"> </object></div>'
+
+
+}
