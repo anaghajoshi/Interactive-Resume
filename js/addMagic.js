@@ -51,3 +51,11 @@ function achFn(){
 
 
 }
+
+function volFn(){
+    document.getElementById('chart-div').style.display='inline';
+    document.getElementById('chart-div')
+        .innerHTML =' <div> <object type="text/html" data="./vol.html" target="_top" width="550px" height="700px" style="overflow:auto"> </object></div>'
+
+
+}
