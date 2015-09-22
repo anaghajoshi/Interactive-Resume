@@ -12,7 +12,16 @@ function contactFn(){
 function objSkillsFn(){
     document.getElementById('chart-div').style.display='inline';
     document.getElementById('chart-div')
-        .innerHTML =' <div> <object type="text/html" data="./objSkills.html" target="_top" width="550px" height="700px" style="overflow:auto"> </object></div>'
+        .innerHTML =' <div> <object type="text/html" data="./objSkillscopy.html" target="_top" width="550px" height="700px" style="overflow:auto"> </object></div>'
+
+
+}
+
+
+function workExpFn(){
+    document.getElementById('chart-div').style.display='inline';
+    document.getElementById('chart-div')
+        .innerHTML =' <div> <object type="text/html" data="./workEx.html" target="_top" width="550px" height="700px" style="overflow:auto"> </object></div>'
 
 
 }
