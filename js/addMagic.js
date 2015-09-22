@@ -59,3 +59,7 @@ function volFn(){
 
 
 }
+function resumeFn(){
+    alert('If you would like a copy of my resume, \nplease write to me and I will be happy to email you the same. \n \nNote: I am not making it available here since it contains sensitive information such as Address etc. \n\n Sorry for the inconvenience.');
+
+}
