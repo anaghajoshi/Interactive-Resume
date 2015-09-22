@@ -34,3 +34,12 @@ function eduFn(){
 
 
 }
+
+
+function prjFn(){
+    document.getElementById('chart-div').style.display='inline';
+    document.getElementById('chart-div')
+        .innerHTML =' <div> <object type="text/html" data="./prj.html" target="_top" width="550px" height="700px" style="overflow:auto"> </object></div>'
+
+
+}

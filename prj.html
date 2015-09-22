@@ -3,8 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion();
+        });
+    </script>
+    <style>
+        p.head{
+
+            color: #525252;
+            font-family: 'AlFresco-Bold', 'Trebuchet MS', cursive;
+            font-size: 37.85px;
+            line-height: 40px;
+            padding-left: 200px;
+        }
+        p.cont, li{
+
+            font-family: 'AlFresco-Bold', 'Trebuchet MS', cursive;
+            color: #525252;
+            font-size: 12px;
+        }
+        body{
+            width: 500px;
+        }
+        .topic,li{
+        color: red;
+        }
+
+
+    </style>
 </head>
 <body>
 
+<p class="head">Projects</p>
+
+<div id="accordion">
+    <h3> Software Engineering </h3>
+    <div>
+        <p align="justify" class="cont">
+            <span class="topic"> Software Modelling Of Electronic Stability Control (ESC) Unit in Architecture Analysis And Design Language (AADL)</span><br><br>
+            Designed reference architecture for Electronic Stability Control Unit. It aimed at establishing building blocks for an integrated electronic stability control (ESC) system to help a driver maintain control of the vehicle. The significance of the project is the potential for improving the safety of commercial and personal vehicle operations through reductions in vehicle-related crashes, injuries, and fatalities.
+        </p>
+    </div>
+    <h3>Web Development</h3>
+    <div>
+        <p align="justify" class="cont">
+            <span class="topic">Gamification of a Business Website (AZURE BACKEND + TEDIOUS NPM API + ANGULAR JS FRONTEND) </span><br><br>
+            Business Gamification is a fairly new concept where Game Techniques and Mechanisms are applied to a Non-Game environment to engage the user more actively and to promote proactive user actions.
+            As a part of this innovation experiemnt, designed the concept and look for the score, rules, achievement badges, leaderboard etc.
+            Implemented this idea in reality by enhancing the website for use in an embassy for clerical work.        </p>
+    </div>
+    <h3>RTOS Firmware Development</h3>
+    <div>
+        <p align="justify" class="cont">
+            <span class="topic"> Real Time Scheduling using Rate Monotonic Analysis (RMA)</span><br><br>
+            Implemented the Real Time scheduler using RMA for Inertial Navigation System (INS), a real-time shipboard avionic system in C.
+        </p>
+        <p class="cont">
+        Other Low-Level Development Projects Include:</p>
+        <ul>
+            <li>Linux Device Driver for Sound Blaster Card</li>
+            <li>Arduino Hobby Projects</li>
+        </ul>
+
+    </div>
+    <h3>Embedded Systems (Hardware + Software)</h3>
+    <div>
+        <p align="justify" class="cont">
+            <span class="topic"> RFID Based Electronic Road Pricing (ERP) System</span><br><br>
+            Radio-frequency identification (RFID) is an automatic identification method wherein the data stored on RFID tags or transponders is remotely retrieved. The RFID tag is a device that can be attached to or incorporated into a product for identification and tracking using radio waves. Some tags can be read from several meters away, beyond the line of sight of the reader. RFID technology is used for a smarter toll collection system called “Electronic Road Pricing”. The system normally consists of an objects counter, sensors, display board, the controllable gate, RFID tags and RFID reader. Using this hardware with compatible VB software and embedded c programming a working prototype was developed with AT89C52 as the microcontroller. The tag was placed on cars and the reader at the toll plaza to automate the toll collection.
+        </p>
+        <p class="cont">
+        Other Embedded Projects Include:
+        </p>
+        <ul>
+            <li>Master Slave Robots</li>
+            <li>Pc Mobilizer Plus</li>
+            <li>RFID based Inventory Management System</li>
+            <li>Infrared Tap Controller</li>
+        </ul>
+    </div>
+    <h3> Parallel Programming (OpenCL) </h3>
+    <div>
+        <p align="justify" class="cont">
+            <span class="topic">Sudoku Solver OpenCL Implementation on FPGA </span><br><br>
+            Sudoku Solver (using a recursive backtracking algorithm) was implemented in OpenCL to extract parallelism so as to fully exploit the FPGA hardware capabilities.
+        </p>
+    </div>
+    <h3> Parallel Programming (MATLAB + FPGA) </h3>
+    <div>
+        <p align="justify" class="cont">
+            <span class="topic">Digital Up-Converter Implementation </span><br><br>
+            Designed and implemented the Digital Up Converter (DUC) on FPGA and conducted a comparative analysis of simulations in MATLAB and ModelSim.
+        </p>
+    </div>
+    <h3> Parallel Programming (Hybrid MPI + CUDA) </h3>
+    <div>
+        <p align="justfy" class="cont">
+            <span class="topic"> Accelerated Gaussian Elimination using MPI CUDA Hybrid (pivoting, pipelining, LU Decomposition)</span><br><br>
+            One of the most popular techniques for solving simultaneous linear equations is the Gaussian elimination method.  This project presents a comparative analysis of different techniques for Gaussian Elimination method via three different algorithms- partial pivoting, parallel-pipelined and Lower-Upper (LU) decomposition. Additionally, each of these three algorithms are implemented in four different ways – serial C code, Parallel MPI code, Parallel CUDA code and parallel Hybrid MPI+CUDA code. The hybrid implementation is the very first to the best of our knowledge. Hybrid code is aimed at leveraging the CPU+GPU heterogeneous Environment. The performance results for these twelve codes are key in gaining the in-depth insights about the compatibility among three constituents – application algorithm, Language of code and Hardware Platform, of a usual High Performance Computing (HPC) eco-system.
+        </p>
+    </div>
+    <h3>Data Vizualization</h3>
+    <div>
+        <p align="justify" class="cont">
+            <span class="topic"> G3NA: A GPU Optimized Global Gene Network Alignment Tool</span><br><br>
+            Ported and modified the IsoRankN graph alignment algorithm to GPUs and aligned two gene interaction networks from rice and maize (each ~2,000 nodes /~20,000 edges) on the
+            Palmetto Supercomputer using Nvidia K20 GPUs. Used VivaGraph JS for visualization.
+            <br><br>
+            <a href="http://on-demand.gputechconf.com/gtc/2015/posters/GTC_2015_Visualization_In-Situ___Scientific_04_P5200_WEB.pdf" target="_blank">
+                POSTER G3NA: A GPU Optimized Global Gene Network Alignment Tool at GPU TECHNOLOGY CONFERENCE (GTC) 2015
+            </a>
+        </p>
+
+    </div>
+</div>
 </body>
 </html>
