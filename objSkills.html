@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    p.head{
+        font-family: 'AlFresco-Bold', 'Trebuchet MS', cursive;
+        font-size: 37.85px;
+        line-height: 40px;
+        padding-left: 100px;
+    }
+    p.obj{
+        font-family: 'AlFresco-Bold', 'Trebuchet MS', cursive;
+
+    }
+
+</style>
+<style>
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+    body {
+        font-family: 'Ubuntu', sans-serif;
+
+       /* background-color: #e9e9e9;*/
+    }
+
+    p{
+        color:#525252;
+        font-size:12px;
+    }
+
+    .skillbar {
+        position:relative;
+        display:block;
+        margin-bottom:15px;
+        width:500px;
+        background:#e9e9e9;
+        height:35px;
+        border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+        -webkit-transition:0.4s linear;
+        -moz-transition:0.4s linear;
+        -ms-transition:0.4s linear;
+        -o-transition:0.4s linear;
+        transition:0.4s linear;
+        -webkit-transition-property:width, background-color;
+        -moz-transition-property:width, background-color;
+        -ms-transition-property:width, background-color;
+        -o-transition-property:width, background-color;
+        transition-property:width, background-color;
+    }
+
+    .skillbar-title {
+        position:absolute;
+        top:0;
+        left:0;
+        width:180px;
+        font-weight:bold;
+        font-size:13px;
+        color:#ffffff;
+        background:#6adcfa;
+        -webkit-border-top-left-radius:3px;
+        -webkit-border-bottom-left-radius:4px;
+        -moz-border-radius-topleft:3px;
+        -moz-border-radius-bottomleft:3px;
+        border-top-left-radius:3px;
+        border-bottom-left-radius:3px;
+    }
+
+    .skillbar-title span {
+        display:block;
+        background:rgba(0, 0, 0, 0.1);
+        padding:0 20px;
+        height:35px;
+        line-height:35px;
+        -webkit-border-top-left-radius:3px;
+        -webkit-border-bottom-left-radius:3px;
+        -moz-border-radius-topleft:3px;
+        -moz-border-radius-bottomleft:3px;
+        border-top-left-radius:3px;
+        border-bottom-left-radius:3px;
+    }
+
+    .skillbar-bar {
+        height:35px;
+        width:0px;
+        background:#6adcfa;
+        border-radius:3px;
+        -moz-border-radius:3px;
+        -webkit-border-radius:3px;
+    }
+
+    .skill-bar-percent {
+        position:absolute;
+        right:10px;
+        top:0;
+        font-size:11px;
+        height:35px;
+        line-height:35px;
+        color:#ffffff;
+        color:rgba(0, 0, 0, 0.4);
+    }
+</style>
+
+<script src="js/jQuery.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        jQuery('.skillbar').each(function(){
+            jQuery(this).find('.skillbar-bar').animate({
+                width:jQuery(this).attr('data-percent')
+            },6000);
+        });
+    });
+</script>
+
+<body>
+<p class="head">Summary & Skills </p>
+<p class="obj">
+    &#x21F4;&nbsp;A result driven, articulate and analytical engineer who can think out of the box!<br><br>
+    &#x21F4;&nbsp;Poised with a strong background in software and hardware engineering.<br><br>
+    &#x21F4;&nbsp;Comfort with a variety of technologies and interest in learning new one's.<br><br><br>
+</p>
+<p class="skills">
+
+<div class="skillbar clearfix " data-percent="95%">
+    <div class="skillbar-title" style="background: #d35400;"><span>C Programming</span></div>
+    <div class="skillbar-bar" style="background: #e67e22;"></div>
+    <div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="70%">
+    <div class="skillbar-title" style="background: #2980b9;"><span>Python</span></div>
+    <div class="skillbar-bar" style="background: #3498db;"></div>
+    <div class="skill-bar-percent">70%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="60%">
+    <div class="skillbar-title" style="background: #2c3e50;"><span>JavaScript</span></div>
+    <div class="skillbar-bar" style="background: #2c3e50;"></div>
+    <div class="skill-bar-percent">60%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="95%">
+    <div class="skillbar-title" style="background: #46465e;"><span>SQL</span></div>
+    <div class="skillbar-bar" style="background: #5a68a5;"></div>
+    <div class="skill-bar-percent">95%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="85%">
+    <div class="skillbar-title" style="background: #333333;"><span>VHDL</span></div>
+    <div class="skillbar-bar" style="background: #525252;"></div>
+    <div class="skill-bar-percent">85%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="80%">
+    <div class="skillbar-title" style="background: #27ae60;"><span>Cuda + MPI + OPENCL</span></div>
+    <div class="skillbar-bar" style="background: #2ecc71;"></div>
+    <div class="skill-bar-percent">80%</div>
+</div> <!-- End Skill Bar -->
+
+<div class="skillbar clearfix " data-percent="60%">
+    <div class="skillbar-title" style="background: #124e8c;"><span>HTML + CSS</span></div>
+    <div class="skillbar-bar" style="background: #4288d0;"></div>
+    <div class="skill-bar-percent">60%</div>
+</div> <!-- End Skill Bar -->
+
+</p>
+</body>
+</html>
