@@ -24,7 +24,28 @@ h0{
 #chart-div{
     float: right;
     float:top;
-    /*border: solid;*/
+
     height: 700px;
     width: 550px;
+
+    padding-left: 855px;
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+
 }
+#page1{
+
+    height: 170px;
+    width: 845px;
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+
+
+}
+#tile{
+    float: left;
+    float:top;
+    height: 600px;
+    width: 700px;
+    position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+
+}
+
